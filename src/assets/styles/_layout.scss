@@ -1,0 +1,67 @@
+$header-bg-color: #ceffc6;
+$footer-bg-color: #debeff;
+$leftsidebar-width: 10rem;
+$leftsidebar-bg-color: #d1d5fe;
+
+$rightsidebar-width: 10rem;
+$rightsidebar-bg-color: #929afe;
+
+html, body {
+    min-height: 100%;
+    height: 100%;
+    //overflow: hidden;
+    @at-root body{
+        display: flex;
+        flex-direction: column;
+    }
+    *:focus, *.focus {
+        box-shadow: none;
+        outline: 0;
+        outline: none;
+    }
+    #root{
+        display: flex;
+        flex-direction: column;
+        height: 100%;
+    }
+    .header-wrapper{
+        background-color: $header-bg-color;
+    }
+    .footer-wrapper{
+        background-color: $footer-bg-color;
+    }
+    .main-content {
+        display: flex;
+        flex: 1 1 100%;
+        height: 100%;
+        min-height: 0;  //Firefox fix. 
+    }
+    .leftsidebar{
+        width: $leftsidebar-width;
+        background-color: $leftsidebar-bg-color;
+    }
+    .rightsidebar{
+        width: $rightsidebar-width;
+        background-color: $rightsidebar-bg-color;
+    }
+}
+
+
+.dashboard-container {
+    overflow: hidden;
+    display: flex;
+    flex: 1 100%;
+    flex-direction: column;
+    position: relative;
+    .dashboard-content {
+        flex: 1;
+        overflow-x: hidden;
+        overflow-y: auto;
+    }
+
+    .dashboard-header {
+
+    }
+    .dashboard-footer{
+    }
+}

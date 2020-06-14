@@ -1,0 +1,10 @@
+/*........Necessary Includes.......*/
+@import "../../../node_modules/bootstrap/scss/functions";
+
+//Custom Variables.  It should be after bootstrap function and before bootstrap variables.
+@import "bs-variables";
+@import "project-variable";
+@import "../styles/mixin";
+
+@import "../../../node_modules/bootstrap/scss/variables";
+@import "../../../node_modules/bootstrap/scss/mixins";

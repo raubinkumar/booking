@@ -1,0 +1,41 @@
+$font-weight-semi-bold:                  500;
+
+// Header
+$navbar-box-shadow:                      0 .0625rem .5625rem 0 rgba(0,0,0,.16);
+$header-tabs-padding-x:                  .9375rem;
+
+$header-tab-item-padding-y:              .9375rem;
+$header-tab-item-padding-x:              1rem;
+$header-tab-item-color:                  #888;
+
+$header-tab-item-active-border-color:    $primary;
+
+// Tabs
+$nav-tabs-box-shadow:                    0 .125rem .25rem 0 rgba(0,0,0,.16);
+//$nav-tabs-padding-x:                     .9375rem;
+$nav-tabs-link-padding-y:                .5rem;
+$nav-tabs-link-active-border-width:      .125rem;
+
+// Input Search
+$input-group-search-border-radius :      $border-radius;
+$input-search-padding-y:                 .625rem;
+$input-search-padding-x:                 .75rem;
+$input-search-font-size:                 .75rem;
+$input-search-btn-icon-padding-x:        .75rem;
+
+// List Group
+$list-group-header-padding-y:            .4375rem;
+$list-group-header-padding-x:            .6875rem;
+$list-group-header-margin-y:             .75rem;
+$list-group-header-font-size:            .875rem;
+
+
+//Zindex
+$zindex-click:                            10;
+
+//Card
+$card-box-shadow:                         0 .125rem .25rem 0 rgba(0,0,0,.16);
+$card-table-hover:                         #F0F7FF;
+
+//Badge
+$badge-color:                             $white;

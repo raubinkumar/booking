@@ -1,0 +1,80 @@
+$font-size-list: 9, 10, 11, 12, 13, 14, 15, 16, 18, 20, 22, 24, 28, 30; //Generate font class (.f-*) cycles through font-size-list
+
+@each $font-size in $font-size-list {
+    .f-#{$font-size} {
+        font-size: #{$font-size/16}rem !important;
+    }
+}
+
+.font-weight-medium {
+     font-weight: 500;
+ }
+
+//List Horizontal
+.list-pipe {
+    display: flex;
+    align-items: center;
+    @at-root .list-inline {
+        margin-bottom: 0.625rem;
+    }
+    .list-inline-item {
+        & + .list-inline-item {
+            &:not(.no-pipe) {
+                &:before {
+                    padding-right: 0.5rem;
+                    color: inherit;
+                    content: "|";
+                }
+            }
+        }
+    }
+}
+//Large(Extra Spacing Between li)Horizontal menu
+.list-pipe-lg {
+    .list-inline-item {
+        &:not(:last-child) {
+            margin-right: 1.5rem;
+        }
+        & + .list-inline-item {
+            &:before {
+                margin-right: 1.5rem;
+                padding-right: 0.5rem;
+                color: inherit;
+                content: "|";
+            }
+        }
+    }
+}
+
+.divider-right {
+    &:before {
+        content: "";
+        width: 1px;
+        height: 30%;
+        background-color: $gray-600;
+        position: absolute;
+        right: 0;
+        top: 10px;
+    }
+}
+
+
+// cursore pointer
+.cursor-pointer{
+  cursor: pointer;
+}
+
+.no-shadow{
+    box-shadow: none !important;
+}
+
+.border-dashed{
+    border-style: dashed !important;
+}
+
+.resize-none {
+     resize: none;
+}
+textarea::-webkit-scrollbar {
+     width: 0em;
+ }

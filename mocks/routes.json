@@ -1,0 +1,4 @@
+{
+    "/v1/locations": "/locations",
+    "/v1/flights\\?from=:from&to=:to": "/flights?from=:from&to=:to"
+}

@@ -1,0 +1,18 @@
+.main-content .search-form-control {
+    margin: 0.75em;
+    min-width: 10em;
+}
+
+.search-bar-container {
+    height: 150px;
+}
+
+.search-result-grid {
+    max-height: calc(100vh - 275px);
+}
+
+.no-result-found {
+    color: red;
+    font-size: 18px;
+    padding-top: 10px;
+}
