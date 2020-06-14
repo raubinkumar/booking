@@ -28,7 +28,7 @@ class SearchContainer extends React.Component<SearchProps, {}> {
         }
         return (
             <React.Fragment>
-                <Container maxWidth="lg">
+                <Container maxWidth="lg" className="body-container">
                     <SearchPanel
                         locations={this.props.flight.locations}
                         onSearch={this.onSearch}

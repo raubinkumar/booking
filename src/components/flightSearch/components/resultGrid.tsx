@@ -49,9 +49,9 @@ class ResultGrid extends React.Component<ResultProps, ResultState> {
         const rows = this.props.result;
         const { pageNo, rowsPerPage } = this.state;
         return (
-            <Container>
+            <React.Fragment>
                 {rows && rows.length > 0 ? (
-                    <Paper>
+                    <React.Fragment>
                         <TableContainer
                             component={Paper}
                             className="search-result-grid"
@@ -132,13 +132,14 @@ class ResultGrid extends React.Component<ResultProps, ResultState> {
                         <TablePagination
                             rowsPerPageOptions={[10, 25, 100]}
                             component="div"
+                            className="table-footer-pagination"
                             count={rows.length}
                             rowsPerPage={this.state.rowsPerPage}
                             page={this.state.pageNo}
                             onChangePage={this.handleChangePage}
                             onChangeRowsPerPage={this.handleChangeRowsPerPage}
                         />
-                    </Paper>
+                    </React.Fragment>
                 ) : (
                     rows && (
                         <div className="no-result-found">
@@ -146,7 +147,7 @@ class ResultGrid extends React.Component<ResultProps, ResultState> {
                         </div>
                     )
                 )}
-            </Container>
+            </React.Fragment>
         );
     }
 }
