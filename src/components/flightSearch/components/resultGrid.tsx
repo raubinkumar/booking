@@ -11,9 +11,11 @@ import {
     TablePagination,
 } from "@material-ui/core";
 import { SearchResultModel } from "../models/searchResultModel";
+import { stat } from "fs";
 
 export interface ResultProps {
     result: SearchResultModel[];
+    isLoading: boolean;
 }
 
 interface ResultState {
@@ -28,6 +30,13 @@ class ResultGrid extends React.Component<ResultProps, ResultState> {
             pageNo: 0,
             rowsPerPage: 10,
         };
+    }
+
+    static getDerivedStateFromProps(state: ResultState, props: ResultProps) {
+        if (props.isLoading) {
+            return { ...state, pageNo: 0 };
+        }
+        return state;
     }
 
     setPage = (pageNo: number) => {

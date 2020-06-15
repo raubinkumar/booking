@@ -33,7 +33,10 @@ class SearchContainer extends React.Component<SearchProps, {}> {
                         locations={this.props.flight.locations}
                         onSearch={this.onSearch}
                     />
-                    <ResultGrid result={this.props.flight.searchResults} />
+                    <ResultGrid
+                        isLoading={this.props.flight.loading}
+                        result={this.props.flight.searchResults}
+                    />
                 </Container>
             </React.Fragment>
         );
